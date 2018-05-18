@@ -1,6 +1,6 @@
 {
-  "name": "swig",
-  "version": "1.4.2",
+  "name": "swig-security-fix",
+  "version": "2.0.0",
   "description": "A simple, powerful, and extendable templating engine for node.js and browsers, similar to Django, Jinja2, and Twig.",
   "keywords": [
     "template",
@@ -14,9 +14,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/paularmstrong/swig.git"
+    "url": "http://github.com/theleapofcode/swig.git"
   },
-  "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
   "dependencies": {
     "uglify-js": "~2.8.0",
     "optimist": "~0.6"
@@ -47,10 +46,7 @@
   },
   "scripts": {
     "prepublish": "npm prune && make build",
-    "test": "make lint && make test reporter=spec && make test-browser && make coverage cov-reporter=travis-cov",
-    "travis-cov": {
-      "threshold": 95
-    }
+    "test": "make lint && make test reporter=spec && make test-browser && make coverage cov-reporter=travis-cov"
   },
   "config": {
     "blanket": {
@@ -58,6 +54,6 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/paularmstrong/swig/issues"
+    "url": "https://github.com/theleapofcode/swig/issues"
   }
 }
